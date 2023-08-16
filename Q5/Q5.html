@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question 5</title>
+        <link rel="stylesheet" href="Q5.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h4 class="logo-header">LOGO</h4>
+                <ul class="navigation-list">
+                    <li>Company</li>
+                    <li>Services</li>
+                    <li>FinTech Solutions</li>
+                    <li>Products</li>
+                    <li>Portfolio</li>
+                    <li class="hover-underline">Contact us</li>
+                </ul>
+            </header>
+            <main>
+                <div class="left-column">
+                    <h1>Contact us</h1>
+                    <p>Need an experienced and skilled hand with custom IT projects?<br>
+                        Fill out the form to get a free consultation.</p>
+                    <form>
+                        <input type="text" name="company name" id="company-name" placeholder="Your Company Name">
+                        <input type="text" name="nature of bussiness" id="nature-of-bussiness"
+                            placeholder="Nature Of Bussiness">
+                        <div class="address-postcode">
+                            <input type="text" name="adress" id="adress" placeholder="Adress">
+                            <input type="text" name="postcode" id="postcode" placeholder="Postcode" pattern="[0-9]+"
+                                minlength="10">
+                        </div>
+                        <input type="text" name="contact name" id="contact-name" placeholder="Contact Name">
+                        <input type="text" name="contact phone" id="contact-phone" placeholder="Contact Phone"
+                            pattern="[0-9]+">
+                        <input type="email" name="contact email" id="contact-email" placeholder="Contact Email">
+                        <input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn">
+                        <input type="text" name="your-idea" id="your-idea" placeholder="Let's talk about your idea">
+
+                        <label class="file-replacement">
+                            <input type="file" name="file file-upload" id="file-upload" accept=".jpg, .jpeg, .png"
+                                onchange="validateFile(this)">
+                            <div id="fileError" style="color: red;"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="upload-icon" width="16" height="16"
+                                viewBox="0 0 16 16">
+                                <g fill="currentColor">
+                                    <path
+                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+                                </g>
+                            </svg>
+                            <p class="upload-guide">
+                                Upload Additional file
+                            </p>
+                        </label>
+                        <p>Attach file. File size of your documents should not exceed 10MB</p>
+                        <input type="submit" value="SUBMIT" class="input-width">
+                        <div class="checkbox-section">
+                            <input type="checkbox" name="protect data" id="protect-data">
+                            <label for="protect-data">I want to protect my data by signing an NDA</label>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="right-column">
+                    <div class="offices">
+                        <p>Offices</p>
+                        <div class="states">
+                            <p>United States<br>
+                                500 5th Avenue suite 400, NY 10110</p>
+                            <p>United Kingdom<br>
+                                High st, Bromley BRI IDN</p>
+                            <p>France<br>
+                                80 avenue des Terroirs de France, Paris</p>
+                        </div>
+                        <div class="quick-inquiries">
+                            <p>For Quick Inquiries</p>
+                            <div class="phones">
+                                <div class="uk-phone">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 32 24">
+                                        <defs>
+                                            <path id="flagpackGbUkm0" fill="#fff" d="M0 0h32v24H0z" />
+                                        </defs>
+                                        <g fill="none">
+                                            <g clip-path="url(#flagpackGbUkm3)">
+                                                <use href="#flagpackGbUkm0" />
+                                                <path fill="#2E42A5" fill-rule="evenodd" d="M0 0v24h32V0H0Z"
+                                                    clip-rule="evenodd" />
+                                                <mask id="flagpackGbUkm1" width="32" height="24" x="0" y="0"
+                                                    maskUnits="userSpaceOnUse" style="mask-type:luminance">
+                                                    <path fill="#fff" fill-rule="evenodd" d="M0 0v24h32V0H0Z"
+                                                        clip-rule="evenodd" />
+                                                </mask>
+                                                <g mask="url(#flagpackGbUkm1)">
+                                                    <path fill="#fff"
+                                                        d="m-3.563 22.285l7.042 2.979l28.68-22.026l3.715-4.426l-7.53-.995l-11.698 9.491l-9.416 6.396l-10.793 8.581Z" />
+                                                    <path fill="#F50100"
+                                                        d="M-2.6 24.372L.989 26.1L34.54-1.599h-5.037l-32.102 25.97Z" />
+                                                    <path fill="#fff"
+                                                        d="m35.563 22.285l-7.042 2.979L-.159 3.238l-3.715-4.426l7.53-.995l11.698 9.491l9.416 6.396l10.793 8.581Z" />
+                                                    <path fill="#F50100"
+                                                        d="m35.323 23.783l-3.588 1.728l-14.286-11.86l-4.236-1.324l-17.445-13.5H.806l17.434 13.18l4.631 1.588l12.452 10.188Z" />
+                                                    <mask id="flagpackGbUkm2" fill="#fff">
+                                                        <path fill-rule="evenodd"
+                                                            d="M19.778-2h-7.556V8H-1.972v8h14.194v10h7.556V16h14.25V8h-14.25V-2Z"
+                                                            clip-rule="evenodd" />
+                                                    </mask>
+                                                    <path fill="#F50100" fill-rule="evenodd"
+                                                        d="M19.778-2h-7.556V8H-1.972v8h14.194v10h7.556V16h14.25V8h-14.25V-2Z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill="#fff"
+                                                        d="M12.222-2v-2h-2v2h2Zm7.556 0h2v-2h-2v2ZM12.222 8v2h2V8h-2ZM-1.972 8V6h-2v2h2Zm0 8h-2v2h2v-2Zm14.194 0h2v-2h-2v2Zm0 10h-2v2h2v-2Zm7.556 0v2h2v-2h-2Zm0-10v-2h-2v2h2Zm14.25 0v2h2v-2h-2Zm0-8h2V6h-2v2Zm-14.25 0h-2v2h2V8Zm-7.556-8h7.556v-4h-7.556v4Zm2 8V-2h-4V8h4Zm-16.194 2h14.194V6H-1.972v4Zm2 6V8h-4v8h4Zm12.194-2H-1.972v4h14.194v-4Zm2 12V16h-4v10h4Zm5.556-2h-7.556v4h7.556v-4Zm-2-8v10h4V16h-4Zm16.25-2h-14.25v4h14.25v-4Zm-2-6v8h4V8h-4Zm-12.25 2h14.25V6h-14.25v4Zm-2-12V8h4V-2h-4Z"
+                                                        mask="url(#flagpackGbUkm2)" />
+                                                </g>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="flagpackGbUkm3">
+                                                    <use href="#flagpackGbUkm0" />
+                                                </clipPath>
+                                            </defs>
+                                        </g>
+                                    </svg>
+                                    <p>+44 7777777777</p>
+                                </div>
+                                <div class="us-phone">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16"
+                                        viewBox="0 0 640 480">
+                                        <path fill="#bd3d44" d="M0 0h640v480H0" />
+                                        <path stroke="#fff" stroke-width="37"
+                                            d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640" />
+                                        <path fill="#192f5d" d="M0 0h364.8v258.5H0" />
+                                        <marker id="flagUs4x30" markerHeight="30" markerWidth="30">
+                                            <path fill="#fff" d="m14 0l9 27L0 10h28L5 27z" />
+                                        </marker>
+                                        <path fill="none" marker-mid="url(#flagUs4x30)"
+                                            d="m0 0l16 11h61h61h61h61h60L47 37h61h61h60h61L16 63h61h61h61h61h60L47 89h61h61h60h61L16 115h61h61h61h61h60L47 141h61h61h60h61L16 166h61h61h61h61h60L47 192h61h61h60h61L16 218h61h61h61h61h60L0 0" />
+                                    </svg>
+                                    <p>+1 3333333330</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsletter">
+                            Would you like to join our newsletter?
+                        </div>
+                        <div class="newsletter-email-button">
+                            <input type="email" name="newsletter" id="newsletter" placeholder="Email">
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16.5"
+                                    viewBox="0 0 24 24">
+                                    <path fill="white" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59L21 7Z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <script src="Q5.js"></script>
+    </body>
+
+</html>
