@@ -6,11 +6,21 @@ const salaries = {
 
 function topsalary() {
   let maxSalary = 0;
+  const topSalaryPeople = []; // Array to store people with top salary
+
   for (const [person, salary] of Object.entries(salaries)) {
-    // console.log(`${person} has ${salary} salary`);
-    maxSalary = maxSalary < salary ? salary : maxSalary;
+    if (salary > maxSalary) {
+      maxSalary = salary;
+      topSalaryPeople.length = 0; // Clear the array if a higher salary is found
+    }
+
+    if (salary === maxSalary) {
+      topSalaryPeople.push(person); // Add person to the array if their salary is the top salary
+    }
   }
-  return maxSalary;
+
+  return topSalaryPeople;
 }
+
 const topSalaryInvoke = topsalary();
 console.log(topSalaryInvoke);
