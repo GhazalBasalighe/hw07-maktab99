@@ -10,3 +10,17 @@ const testData1 = sortFromHightoLow([5, 6, 2], [3, 7, 1]); //===> 7,6,5,3,2,1
 const testData2 = sortFromHightoLow([5, 6, 2], [3, 7, 1], [2, 4, 8]); // ===> 8,7,6,5,4,3,2,2,1
 console.log(testData1);
 console.log(testData2);
+
+/*
+function sortFromHighToLow(...arrays) {
+  const combinedArray = [].concat(...arrays);
+  const sortedArray = combinedArray.sort((a, b) => b - a);
+  return sortedArray.join(",");
+}
+
+const testData1 = sortFromHighToLow([5, 6, 2], [3, 7, 1]); // ====> 7,6,5,3,2,1
+const testData2 = sortFromHighToLow([5, 6, 2], [3, 7, 1], [2, 4, 8]); // ===> 8,7,6,5,4,3,2,2,1
+
+console.log(testData1);
+console.log(testData2);
+*/
