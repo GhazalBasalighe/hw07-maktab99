@@ -2,6 +2,7 @@ const salaries = {
   John: 100,
   Pete: 300,
   Mary: 250,
+  Ghazal: 300,
 };
 
 function topsalary() {
