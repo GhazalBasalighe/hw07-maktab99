@@ -32,6 +32,17 @@ const products = [
     price: "$1,949.99",
     image: "Asus Rog Zephyrus.png",
   },
+  {
+    model: "Huawei MateBook X Pro",
+    processor: "Intel Core i7",
+    ram: "8 GB",
+    hardDisk: "512 GB SSD",
+    display: "13 inch",
+    graphics: "RTX 2070",
+    os: "Windows 11",
+    price: "$1,949.99",
+    image: "Huawei matebook pro.png",
+  },
 ];
 
 // Get references to HTML elements
