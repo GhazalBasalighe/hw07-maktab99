@@ -124,6 +124,21 @@ document.addEventListener("DOMContentLoaded", function () {
   displaySelect.value = "placeholder";
 });
 
+//pause and play for video
+const video = document.querySelector("video");
+const pauseButton = document.querySelector(".pause-button");
+
+// Add a click event listener to the pause button
+pauseButton.addEventListener("click", () => {
+  if (video.paused) {
+    // If the video is paused, play it
+    video.play();
+  } else {
+    // If the video is playing, pause it
+    video.pause();
+  }
+});
+
 //the values of the dropdown menu
 ramFilter.addEventListener("click", function (event) {
   if (event.target.tagName === "LI") {
