@@ -138,6 +138,13 @@ pauseButton.addEventListener("click", () => {
     video.pause();
   }
 });
+video.addEventListener("play", () => {
+  pauseButton.style.opacity = 0; // Hide the button
+});
+
+video.addEventListener("pause", () => {
+  pauseButton.style.opacity = 1; // Show the button
+});
 
 //the values of the dropdown menu
 ramFilter.addEventListener("click", function (event) {
