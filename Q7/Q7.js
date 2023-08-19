@@ -48,8 +48,8 @@ const products = [
 // Get references to HTML elements
 const modelSelect = document.getElementById("model");
 const processorSelect = document.getElementById("processor");
-// const ramFilter = document.getElementById("RAM-filter");
-// const hardDiskFilter = document.getElementById("hard-disk-filter");
+const ramFilter = document.getElementById("RAM-filter");
+const hardDiskFilter = document.getElementById("hard-disk-filter");
 const displaySelect = document.getElementById("Display");
 const resultsTableBody = document.getElementById("results-table-body");
 const searchButton = document.getElementById("search-button");
@@ -64,9 +64,24 @@ function filterProducts() {
   let results = products;
   const selectedModel = modelSelect.value;
   const selectedProcessor = processorSelect.value;
-  // const selectedRam = ramFilter.value;
-  //   const selectedHardDisk = hardDiskFilter.value;
   const selectedDisplay = displaySelect.value;
+
+  //the values of the dropdown menu
+  ramFilter.addEventListener("click", function (event) {
+    if (event.target.tagName === "LI") {
+      const selectedRam = event.target.textContent;
+      filterAndDisplayResults(selectedRam, "ram");
+    }
+  });
+
+  // Event listener for hard disk filter
+  hardDiskFilter.addEventListener("click", function (event) {
+    if (event.target.tagName === "LI") {
+      const selectedHardDisk = event.target.textContent;
+      filterAndDisplayResults(selectedHardDisk, "hardDisk");
+    }
+  });
+
   if (selectedModel !== "placeholder") {
     results = results.filter((product) => {
       return product.model
@@ -90,7 +105,14 @@ function filterProducts() {
   }
   updateResultsTable(results);
 }
-
+function filterAndDisplayResults(selectedValue, property) {
+  let filteredResults = products;
+  filteredResults = filteredResults.filter((product) => {
+    return product[property]
+      .toLowerCase()
+      .includes(selectedValue.toLowerCase());
+  });
+}
 // Function to update the table with filtered results
 function updateResultsTable(results) {
   resultsTableBody.innerHTML = "";
@@ -117,7 +139,8 @@ function updateResultsTable(results) {
 searchButton.addEventListener("click", function () {
   filterProducts();
 });
-//taking placeholders back
+
+//taking placeholders back after each refresh
 document.addEventListener("DOMContentLoaded", function () {
   modelSelect.value = "placeholder";
   processorSelect.value = "placeholder";
