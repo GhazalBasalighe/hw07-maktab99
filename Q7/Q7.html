@@ -82,7 +82,7 @@
 
                 <!-- INPUTS AND SEARCH LIST -->
 
-                <form>
+                <form id="salam">
 
                     <!-- LAPTOP MODEL -->
                     <div class="input-labels">
@@ -129,7 +129,7 @@
                             <span>RAM</span>
                         </button>
                         <div class="dropdown-menu">
-                            <ul>
+                            <ul id="RAM-filter">
                                 <li>16 GB</li>
                                 <li>32 GB</li>
                                 <li>8 GB</li>
@@ -137,6 +137,14 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- <select id="RAM-filter" class="dropdown-menu">
+                            <option value="16 GB">16 GB</option>
+                            <option value="32 GB">32 GB</option>
+                            <option value="8 GB">8 GB</option>
+                            <option value="6 GB">6 GB</option>
+                        </select> -->
+
 
                     <!-- HARD DISK -->
 
@@ -180,6 +188,7 @@
                             <option value="18 inch">18 inch</option>
                         </select>
                     </div>
+                    <button id="search-button">Search</button>
                 </form>
 
                 <!-- SEPERATOR LINE -->
@@ -204,57 +213,51 @@
                             <th>Purchase</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="results-table-body">
                         <!-- TABLE FIRST ROW -->
-                        <tr>
-                            <td>Legion Pro 7i</td>
-                            <td>
-                                <div class="first-laptop"><img src="Legion Pro 7i.png" alt="legion pro 7i"></div>
-                            </td>
-                            <td>Intel Core i9</td>
-                            <td>16 GB</td>
-                            <td>1 TB SSD</td>
-                            <td>16" WQXGA</td>
-                            <td>RTX 4070</td>
-                            <td>Windows 11</td>
-                            <td>$1,949.99</td>
+                        <!-- <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td><button>Add to Cart</button></td>
-                        </tr>
+                        </tr> -->
                         <!-- TABLE SECOND ROW -->
-                        <tr>
-                            <td>Razer Blade 15</td>
-                            <td>
-                                <div class="first-laptop"><img src="Razer Blade 15.png" alt="Razer Blade 15"></div>
-                            </td>
-                            <td>Intel Core i7</td>
-                            <td>32 GB</td>
-                            <td>256GB SSD</td>
-                            <td>16" WQXGA</td>
-                            <td>GTX 1660 Ti</td>
-                            <td>Windows 11</td>
-                            <td>$1,949.99</td>
+                        <!-- <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td><button>Add to Cart</button></td>
-                        </tr>
+                        </tr> -->
                         <!-- TABLE THIRD ROW -->
-                        <tr>
-                            <td>ROG Zephyrus M15</td>
-                            <td>
-                                <div class="first-laptop"><img src="Asus Rog Zephyrus.png" alt="ROG Zephyrus M15"></div>
-                            </td>
-                            <td>Intel Core i7</td>
-                            <td>16 GB</td>
-                            <td>1 TB SSD</td>
-                            <td>16" WQXGA</td>
-                            <td>RTX 2070</td>
-                            <td>Windows 11</td>
-                            <td>$1,949.99</td>
+                        <!-- <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td><button>Add to Cart</button></td>
-                        </tr>
+                        <!-- </tr> -->
                     </tbody>
                 </table>
-
             </main>
         </div>
+        <script src="Q7.js"></script>
     </body>
 
 </html>
