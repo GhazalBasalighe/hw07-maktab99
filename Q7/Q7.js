@@ -66,22 +66,6 @@ function filterProducts() {
   const selectedProcessor = processorSelect.value;
   const selectedDisplay = displaySelect.value;
 
-  //the values of the dropdown menu
-  ramFilter.addEventListener("click", function (event) {
-    if (event.target.tagName === "LI") {
-      const selectedRam = event.target.textContent;
-      filterAndDisplayResults(selectedRam, "ram");
-    }
-  });
-
-  // Event listener for hard disk filter
-  hardDiskFilter.addEventListener("click", function (event) {
-    if (event.target.tagName === "LI") {
-      const selectedHardDisk = event.target.textContent;
-      filterAndDisplayResults(selectedHardDisk, "hardDisk");
-    }
-  });
-
   if (selectedModel !== "placeholder") {
     results = results.filter((product) => {
       return product.model
@@ -105,14 +89,7 @@ function filterProducts() {
   }
   updateResultsTable(results);
 }
-function filterAndDisplayResults(selectedValue, property) {
-  let filteredResults = products;
-  filteredResults = filteredResults.filter((product) => {
-    return product[property]
-      .toLowerCase()
-      .includes(selectedValue.toLowerCase());
-  });
-}
+
 // Function to update the table with filtered results
 function updateResultsTable(results) {
   resultsTableBody.innerHTML = "";
@@ -145,4 +122,26 @@ document.addEventListener("DOMContentLoaded", function () {
   modelSelect.value = "placeholder";
   processorSelect.value = "placeholder";
   displaySelect.value = "placeholder";
+});
+
+//the values of the dropdown menu
+ramFilter.addEventListener("click", function (event) {
+  if (event.target.tagName === "LI") {
+    const selectedRam = event.target.textContent;
+    console.log(selectedRam);
+    // results = results.filter((product) => {
+    //   return product.ram.toLowerCase().includes(selectedRam.toLowerCase());
+    // });
+  }
+});
+hardDiskFilter.addEventListener("click", function (event) {
+  if (event.target.tagName === "LI") {
+    const selectedHardDisk = event.target.textContent;
+    console.log(selectedHardDisk);
+    // results = results.filter((product) => {
+    //   return product.hardDisk
+    //     .toLowerCase()
+    //     .includes(selectedHardDisk.toLowerCase());
+    // });
+  }
 });
