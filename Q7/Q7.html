@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ghazal Tech</title>
+        <link rel="stylesheet" href="Q7.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- HEADER -->
+
+            <header>
+                <h1>Ghazal Tech</h1>
+                <!-- VIDEO -->
+                <video autoplay
+                    src="https://assets.mixkit.co/videos/preview/mixkit-man-working-on-his-laptop-308-large.mp4"></video>
+
+                <!-- VIDEO CONTROLS -->
+
+                <div class="vid-controls">
+
+                    <!-- MIDDLE PAUSE BUTTON -->
+
+                    <span class="pause-button"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="59"
+                            viewBox="0 0 56 59" fill="none">
+                            <path
+                                d="M28.1353 53.6274C40.9357 53.6274 51.3119 42.8179 51.3119 29.4829C51.3119 16.1479 40.9357 5.33841 28.1353 5.33841C15.3349 5.33841 4.95879 16.1479 4.95879 29.4829C4.95879 42.8179 15.3349 53.6274 28.1353 53.6274Z"
+                                stroke="black" stroke-linejoin="round" />
+                            <path
+                                d="M23.5 29.4829V21.1192L30.453 25.3011L37.406 29.4829L30.453 33.6647L23.5 37.8466V29.4829Z"
+                                stroke="black" stroke-linejoin="round" />
+                        </svg></span>
+
+                    <!-- CONTROLS BAR -->
+
+                    <div class="vid-controls-bar">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"
+                                fill="none">
+                                <path
+                                    d="M2.625 11V17.3864C2.625 19.5039 4.84225 20.8413 6.64738 19.8137L9.45 18.2169M2.625 7.33333V4.61359C2.625 2.49609 4.84225 1.15867 6.64738 2.18625L17.8579 8.57358C18.2781 8.80771 18.6297 9.15722 18.8748 9.58465C19.12 10.0121 19.2495 10.5013 19.2495 11C19.2495 11.4987 19.12 11.9879 18.8748 12.4153C18.6297 12.8428 18.2781 13.1923 17.8579 13.4264L12.2526 16.6201"
+                                    stroke="black" stroke-width="0.75" stroke-linecap="round" />
+                            </svg></span>
+
+                        <!-- TIMELINE PROGRESS -->
+
+                        <div class="timeline"></div>
+
+                        <!-- VOLUME BUTTON -->
+
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="23" viewBox="0 0 19 23"
+                                fill="none">
+                                <path
+                                    d="M15.8333 5.75C15.8333 5.75 17.0208 7.475 17.0208 11.5C17.0208 15.525 15.8333 17.25 15.8333 17.25M14.25 8.625C14.25 8.625 14.6458 9.4875 14.6458 11.5C14.6458 13.5125 14.25 14.375 14.25 14.375M1.55086 8.21963C1.80351 7.68071 2.18452 7.24654 2.64415 6.97379C3.11915 6.70834 3.66224 6.70834 4.74999 6.70834C5.15532 6.70834 5.35799 6.70834 5.55432 6.66809C5.74851 6.62828 5.93785 6.55939 6.11799 6.463C6.30007 6.36621 6.46949 6.23109 6.80753 5.96084L6.98169 5.82284C8.99332 4.21571 10.0003 3.41167 10.8458 3.76146C11.0081 3.82854 11.1649 3.92438 11.305 4.04417C12.0357 4.66517 12.0911 6.11129 12.2019 9.00259C12.238 9.83445 12.261 10.6671 12.2708 11.5C12.2708 12.0098 12.2431 12.926 12.2019 13.9965C12.0911 16.8887 12.0357 18.3339 11.305 18.9558C11.1637 19.0758 11.0091 19.171 10.8458 19.2385C10.0011 19.5874 8.99411 18.7843 6.9809 17.1772L6.80832 17.0392C6.47028 16.7689 6.30165 16.6338 6.11878 16.536C5.9386 16.44 5.74926 16.3714 5.55511 16.3319C5.35799 16.2917 5.15532 16.2917 4.74999 16.2917C3.66224 16.2917 3.11915 16.2917 2.64415 16.0262C2.18452 15.7535 1.80351 15.3193 1.55086 14.7804C1.30228 14.2226 1.27378 13.6438 1.21519 12.4852C1.20649 12.3136 1.19936 12.144 1.19461 11.9792"
+                                    stroke="black" stroke-width="0.75" stroke-linecap="round" />
+                            </svg>
+                        </span>
+
+                        <!-- PICTURE IN PICTURE BUTTON -->
+
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="23" viewBox="0 0 18 23"
+                                fill="none">
+                                <path
+                                    d="M8.25 18.2083H3.75C3.35218 18.2083 2.97064 18.0064 2.68934 17.647C2.40804 17.2875 2.25 16.8 2.25 16.2917V6.70833C2.25 6.2 2.40804 5.71249 2.68934 5.35304C2.97064 4.9936 3.35218 4.79166 3.75 4.79166H14.25C14.6478 4.79166 15.0294 4.9936 15.3107 5.35304C15.592 5.71249 15.75 6.2 15.75 6.70833V10.5417"
+                                    stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M10.5 14.375C10.5 14.1208 10.579 13.8771 10.7197 13.6974C10.8603 13.5176 11.0511 13.4167 11.25 13.4167H15C15.1989 13.4167 15.3897 13.5176 15.5303 13.6974C15.671 13.8771 15.75 14.1208 15.75 14.375V17.25C15.75 17.5042 15.671 17.7479 15.5303 17.9276C15.3897 18.1074 15.1989 18.2083 15 18.2083H11.25C11.0511 18.2083 10.8603 18.1074 10.7197 17.9276C10.579 17.7479 10.5 17.5042 10.5 17.25V14.375Z"
+                                    stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></span>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- MAIN -->
+
+            <main>
+
+                <!-- INPUTS AND SEARCH LIST -->
+
+                <form>
+
+                    <!-- LAPTOP MODEL -->
+                    <div class="input-labels">
+                        <label for="model">Laptop model</label>
+                        <select name="model" id="model">
+                            <option value="placeholder" selected disabled hidden>Nothing selected</option>
+                            <option value="asus">Asus</option>
+                            <option value="lenovo">Lenovo</option>
+                            <option value="Mac">Mac</option>
+                            <option value="Razer">Razer</option>
+                        </select>
+                    </div>
+
+                    <!-- PROCESSOR -->
+                    <div class="input-labels">
+                        <label for="processor">Processor</label>
+                        <select name="processor" id="processor">
+                            <option value="placeholder" selected disabled hidden>Nothing selected</option>
+                            <option value="intel core i7">intel core i7</option>
+                            <option value="intel core i9">intel core i9</option>
+                            <option value="intel core i5">intel core i5</option>
+                            <option value="amd ryzen 7">amd ryzen 7</option>
+                        </select>
+                    </div>
+
+                    <!-- RAM-->
+
+                    <div class="input-labels">
+                        <label for="RAM">RAM</label>
+                        <button>
+                            <span class="filter-icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 25 25" fill="none">
+                                    <g clip-path="url(#clip0_64_10)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.125 4.6875C3.125 4.2731 3.28962 3.87567 3.58265 3.58265C3.87567 3.28962 4.2731 3.125 4.6875 3.125H20.3125C20.7269 3.125 21.1243 3.28962 21.4174 3.58265C21.7104 3.87567 21.875 4.2731 21.875 4.6875V6.86042C21.8749 7.4129 21.6553 7.94272 21.2646 8.33333L15.625 13.9729V21.7062C15.625 21.9016 15.5751 22.0937 15.48 22.2643C15.3849 22.4349 15.2478 22.5784 15.0816 22.6811C14.9154 22.7838 14.7258 22.8423 14.5307 22.8511C14.3355 22.8599 14.1414 22.8186 13.9667 22.7312L10.0948 20.7958C9.87851 20.6877 9.69661 20.5215 9.56948 20.3158C9.44235 20.1101 9.37501 19.8731 9.375 19.6312V13.9729L3.73542 8.33333C3.34469 7.94272 3.12512 7.4129 3.125 6.86042V4.6875Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_64_10">
+                                            <rect width="25" height="25" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg></span>
+                            <span>RAM</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>16 GB</li>
+                                <li>32 GB</li>
+                                <li>8 GB</li>
+                                <li>6 GB</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- HARD DISK -->
+
+                    <div class="input-labels">
+                        <label for="Hard disk">Hard disk</label>
+                        <button>
+                            <span class="filter-icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 25 25" fill="none">
+                                    <g clip-path="url(#clip0_64_10)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.125 4.6875C3.125 4.2731 3.28962 3.87567 3.58265 3.58265C3.87567 3.28962 4.2731 3.125 4.6875 3.125H20.3125C20.7269 3.125 21.1243 3.28962 21.4174 3.58265C21.7104 3.87567 21.875 4.2731 21.875 4.6875V6.86042C21.8749 7.4129 21.6553 7.94272 21.2646 8.33333L15.625 13.9729V21.7062C15.625 21.9016 15.5751 22.0937 15.48 22.2643C15.3849 22.4349 15.2478 22.5784 15.0816 22.6811C14.9154 22.7838 14.7258 22.8423 14.5307 22.8511C14.3355 22.8599 14.1414 22.8186 13.9667 22.7312L10.0948 20.7958C9.87851 20.6877 9.69661 20.5215 9.56948 20.3158C9.44235 20.1101 9.37501 19.8731 9.375 19.6312V13.9729L3.73542 8.33333C3.34469 7.94272 3.12512 7.4129 3.125 6.86042V4.6875Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_64_10">
+                                            <rect width="25" height="25" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg></span>
+                            <span>Hard disk</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>256 SSD</li>
+                                <li>500 SSD</li>
+                                <li>1T SSD</li>
+                                <li>1T HDD</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Display -->
+
+                    <div class="input-labels">
+                        <label for="Display">Display</label>
+                        <select name="Display" id="Display">
+                            <option value="placeholder" selected disabled hidden>Nothing selected</option>
+                            <option value="16 inch">16 inch</option>
+                            <option value="15 inch">15 inch</option>
+                            <option value="14 inch">14 inch</option>
+                            <option value="18 inch">18 inch</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- SEPERATOR LINE -->
+
+                <div class="seperator-line"></div>
+
+                <!-- RESULTS TABLE -->
+
+                <table>
+                    <thead>
+                        <!-- TABLE HEADER ROW -->
+                        <tr>
+                            <th>Laptop model</th>
+                            <th>Picture</th>
+                            <th>Processor</th>
+                            <th>RAM</th>
+                            <th>Hard disk</th>
+                            <th>Display</th>
+                            <th>Graphics</th>
+                            <th>OS</th>
+                            <th>Price</th>
+                            <th>Purchase</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TABLE FIRST ROW -->
+                        <tr>
+                            <td>Legion Pro 7i</td>
+                            <td>
+                                <div class="first-laptop"><img src="Legion Pro 7i.png" alt="legion pro 7i"></div>
+                            </td>
+                            <td>Intel Core i9</td>
+                            <td>16 GB</td>
+                            <td>1 TB SSD</td>
+                            <td>16" WQXGA</td>
+                            <td>RTX 4070</td>
+                            <td>Windows 11</td>
+                            <td>$1,949.99</td>
+                            <td><button>Add to Cart</button></td>
+                        </tr>
+                        <!-- TABLE SECOND ROW -->
+                        <tr>
+                            <td>Razer Blade 15</td>
+                            <td>
+                                <div class="first-laptop"><img src="Razer Blade 15.png" alt="Razer Blade 15"></div>
+                            </td>
+                            <td>Intel Core i7</td>
+                            <td>32 GB</td>
+                            <td>256GB SSD</td>
+                            <td>16" WQXGA</td>
+                            <td>GTX 1660 Ti</td>
+                            <td>Windows 11</td>
+                            <td>$1,949.99</td>
+                            <td><button>Add to Cart</button></td>
+                        </tr>
+                        <!-- TABLE THIRD ROW -->
+                        <tr>
+                            <td>ROG Zephyrus M15</td>
+                            <td>
+                                <div class="first-laptop"><img src="Asus Rog Zephyrus.png" alt="ROG Zephyrus M15"></div>
+                            </td>
+                            <td>Intel Core i7</td>
+                            <td>16 GB</td>
+                            <td>1 TB SSD</td>
+                            <td>16" WQXGA</td>
+                            <td>RTX 2070</td>
+                            <td>Windows 11</td>
+                            <td>$1,949.99</td>
+                            <td><button>Add to Cart</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </main>
+        </div>
+    </body>
+
+</html>

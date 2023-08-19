@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+}
+
+body
+{
+    display: grid;
+    place-items: center;
+    background-color: #FFF3DA;
+}
+
+.container
+{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+/* HEADER AND VIDEO SECTION */
+
+header > h1
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+video
+{
+    width: 54.81rem;
+    height: 15.87rem;
+    border-radius: 10px;
+    background: #BEADFA;
+    position: relative;
+    margin-bottom: 21px;
+}
+
+.pause-button
+{
+    position: absolute;
+    width: 3.47rem;
+    height: 3.62rem;
+    background-color: rgba(255, 255, 255, 0.00);
+    right: 46rem;
+    bottom: 30rem;
+    background-color: #BEADFA;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.vid-controls-bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: #D0BFFF;
+    width: 54.81rem;
+    height: 2.18rem;
+    position: absolute;
+    bottom: 24rem;
+}
+
+.timeline
+{
+    width: 49.3125rem;
+    height: 1.125rem;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background-color: #EADBC8;
+}
+
+/* MAIN SECTION */
+
+main,
+form
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* FORM SECTION */
+form
+{
+    justify-content: space-evenly;
+    width: 73.125rem;
+}
+
+.input-labels
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-labels > label
+{
+    margin: 7px 0;
+}
+
+select,
+button
+{
+    border-radius: 5px;
+    background-color: #EADBC8;
+    width: 13.125rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+button
+{
+    align-items: center;
+    background-color: #DFCCFB;
+    cursor: pointer;
+}
+
+.dropdown-menu > ul
+{
+    display: none;
+}
+
+/* SEPERATOR LINE */
+
+.seperator-line
+{
+    width: 1230px;
+    height: 4px;
+    background-color: #EADBC8;
+    margin: 26px 0 10px 0;
+}
+
+/* TABLE  */
+th,
+td
+{
+    padding: 0.875rem;
+    text-align: center;
+}
+
+th
+{
+    font-weight: 700;
+}
+
+.first-laptop img
+{
+
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+td button
+{
+    width: 124px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 0px solid rgba(239, 148, 244, 0.20);
+    background: #BEADFA;
+    box-shadow: -4px 4px 1px 3px rgba(0, 0, 0, 0.25);
+}
